@@ -1,0 +1,63 @@
+/* Paleta de verdes suaves */
+:root {
+    --verde-claro: #e6f4ea;
+    --verde-medio: #a8d5ba;
+    --verde-principal: #6fcf97;
+    --verde-oscuro: #388e5c;
+    --texto-principal: #222;
+    --blanco: #fff;
+}
+
+body {
+    background: var(--verde-claro);
+    color: var(--texto-principal);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: var(--verde-principal);
+    padding: 1em 0.5em;
+    box-shadow: 0 2px 6px rgba(56, 142, 92, 0.08);
+}
+nav ul {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+nav a {
+    color: var(--verde-oscuro);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: var(--blanco);
+    background: var(--verde-oscuro);
+    border-radius: 4px;
+    padding: 0.2em 0.6em;
+}
+h1, h2 {
+    color: var(--verde-oscuro);
+}
+section, form {
+    background: var(--blanco);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(56, 142, 92, 0.07);
+    margin: 2em auto;
+    max-width: 600px;
+    padding: 2em;
+}
+footer {
+    text-align: center;
+    color: var(--verde-oscuro);
+    background: var(--verde-medio);
+    padding: 1em 0;
+    margin-top: 2em;
+    border-top: 1px solid var(--verde-principal);
+}
